@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title', 'xD')
+@section('title', 'Homepage')
 
 @section('content')
     <h1>Posts</h1>

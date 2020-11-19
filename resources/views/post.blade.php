@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title', 'xD')
+@section('title', 'Post')
 
 @section('content')
     <h1>{{$post->title}}</h1>
