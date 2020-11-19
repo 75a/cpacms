@@ -11,6 +11,8 @@ class PostsController extends Controller
     public function index($slug)
     {
         $post = Post::where('slug', $slug)->first();
-        echo $post->title;
+        return view('post', [
+            'post' => $post
+        ]);
     }
 }
