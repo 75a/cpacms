@@ -8,7 +8,28 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
+                <table class="table-auto text-left m-3 w-full">
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">Earnings today</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Earnings yesterday</td>
+                            <td>$0.00</td>
+                        </tr>
+
+                        <tr>
+                            <td class="font-bold">Earnings this month</td>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Earnings last month</td>
+                            <td>$0.00</td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
