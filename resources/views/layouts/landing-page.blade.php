@@ -51,8 +51,8 @@
                 <div class="footer-grid-container">
                     <p class="footer-logo">@yield('logo_text')</p>
                     <div>
-                        <p class="footer-text">Copyright &copy; 2020 CPACMS - All rights reserved.</p>
-                        <p class="footer-text">All trademarks belong to their respective owners.</p>
+                        <p class="footer-text">Copyright  &copy; {{env("CONTENTS_COPYRIGHTEDBY") }}</p>
+                        <p class="footer-text">{{env("CONTENTS_COPYRIGHTDISCLAIMER")}}</p>
                     </div>
 
                 </div>
