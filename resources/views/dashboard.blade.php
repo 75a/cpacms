@@ -12,20 +12,21 @@
                     <tbody>
                         <tr>
                             <td class="font-bold">Earnings today</td>
-                            <td>$0.00</td>
+                            <td>${{$earningsToday}}</td>
+
                         </tr>
                         <tr>
                             <td class="font-bold">Earnings yesterday</td>
-                            <td>$0.00</td>
+                            <td>${{$earningsYesterday}}</td>
                         </tr>
 
                         <tr>
                             <td class="font-bold">Earnings this month</td>
-                            <td>$0.00</td>
+                            <td>${{$earningsThisMonth}}</td>
                         </tr>
                         <tr>
                             <td class="font-bold">Earnings last month</td>
-                            <td>$0.00</td>
+                            <td>${{$earningsLastMonth}}</td>
                         </tr>
 
                     </tbody>

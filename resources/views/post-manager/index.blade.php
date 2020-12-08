@@ -17,7 +17,7 @@
                     <thead>
                     <tr class="text-left">
                         <th class="w-8/12">Title</th>
-                        <th>Earnings</th>
+                        <th>Total earnings</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -30,7 +30,7 @@
                                 {{$post->menu_link_text}}
                             </td>
                             <td>
-                                $0.00
+                                ${{ number_format($post->conversions->sum('payout'), 2)}}
                             </td>
                             <td>
                                 <x-jet-button class="m-1">

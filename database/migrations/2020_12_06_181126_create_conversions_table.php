@@ -17,14 +17,20 @@ class CreateConversionsTable extends Migration
             $table->id();
             $table->unsignedBigInteger("offer_id");
             $table->string("offer_name");
-            $table->string("aff_sub");
-            $table->string("aff_sub2");
-            $table->string("aff_sub3");
-            $table->string("aff_sub4");
-            $table->string("aff_sub5");
+            $table->string("aff_sub")->nullable();
+            $table->string("aff_sub2")->nullable();
+            $table->string("aff_sub3")->nullable();
+            $table->string("aff_sub4")->nullable();
+            $table->string("aff_sub5")->nullable();
             $table->string("session_ip");
             $table->float("payout");
+            $table->unsignedBigInteger("post_id");
             $table->timestamps();
+
+            $table->foreign('post_id')
+                ->references('id')
+                ->on('posts')
+                ->onDelete('cascade');
         });
     }
 

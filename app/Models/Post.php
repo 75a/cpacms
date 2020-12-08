@@ -56,4 +56,11 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function conversions()
+    {
+        return $this->hasMany(Conversion::class);
+    }
+
+
 }
