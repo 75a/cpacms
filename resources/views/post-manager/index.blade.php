@@ -20,6 +20,7 @@
                         <th>Total earnings</th>
                         <th></th>
                         <th></th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -36,6 +37,13 @@
                                 <x-jet-button class="m-1">
                                     <a href="{{route('post-manager.edit', $post)}}" target="_blank">
                                         {{ __('Edit') }}
+                                    </a>
+                                </x-jet-button>
+                            </td>
+                            <td>
+                                <x-jet-button class="m-1">
+                                    <a href="/{{$post->slug}}" target="_blank">
+                                        {{ __('View') }}
                                     </a>
                                 </x-jet-button>
                             </td>
