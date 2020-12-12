@@ -34,6 +34,7 @@
             </div>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-3 mt-5">
                 <form method="post" action="/dashboard">
+                    @csrf
                     <div class="block">
                         <input type="checkbox" id="registration_enabled">
                         <label for="registration_enabled">Allow registration of new users</label>
