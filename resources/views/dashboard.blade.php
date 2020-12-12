@@ -32,6 +32,18 @@
                     </tbody>
                 </table>
             </div>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-3 mt-5">
+                <form method="post" action="/dashboard">
+                    <div class="block">
+                        <input type="checkbox" id="registration_enabled">
+                        <label for="registration_enabled">Allow registration of new users</label>
+                    </div>
+                    <input type="submit" value="Save changes" class="block p-2 mt-4 bg-green-300 hover:bg-green-400 cursor-pointer rounded-md">
+                </form>
+
+                </label>
+            </div>
+
         </div>
     </div>
 </x-app-layout>
