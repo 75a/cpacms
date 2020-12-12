@@ -158,7 +158,7 @@
             <div class="single-input-container">
                 <label for="avatar" class="input-label">Avatar</label>
                 <input class="input-custom input-text" type="text" id="avatar" name="avatar"
-                       placeholder="" value="/avatar.png">
+                       placeholder="" value="{{env('CONTENTS_DEFAULTAVATAR')}}">
             </div>
 
             <!-- Dropdown -->
