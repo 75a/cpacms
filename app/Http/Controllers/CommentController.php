@@ -27,6 +27,12 @@ class CommentController extends Controller
         if ($comment->text === null) {
             $comment->text = Fakecomments::inRandomOrder()->first()->comment;
         }
+        if ($comment->day === null) {
+            $comment->day = rand(1,7);
+        }
+        if ($comment->hour === null) {
+            $comment->hour = rand(0,23);
+        }
 
         $comment->save();
         return back();

@@ -165,6 +165,7 @@
             <div class="single-input-container">
                 <label for="day" class="input-label">Day of the week</label>
                 <select id="day" name="day" class="input-custom input-dropdown">
+                    <option value="">Random day</option>
                     <option value="1">Monday</option>
                     <option value="2">Tuesday</option>
                     <option value="3">Wednesday</option>
@@ -178,6 +179,7 @@
             <div class="single-input-container">
                 <label for="hour" class="input-label">Hour</label>
                 <select id="hour" name="hour" class="input-custom input-dropdown">
+                    <option value="">Random hour</option>
                     @for ($i = 0; $i <= 23; $i++)
                         <option value="{{$i}}">{{$i}}</option>
                     @endfor
