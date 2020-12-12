@@ -151,7 +151,7 @@
             @csrf
             <input type="hidden" id="post_id" name="post_id" value="{{$post->id}}">
             <div class="single-input-container">
-                <label for="username" class="input-label">Comment author (Leave empty to automatically choose a random username)</label>
+                <label for="username" class="input-label">Comment author (Leave empty to auto-fill)</label>
                 <input class="input-custom input-text" type="text" id="username" name="username"
                        placeholder="Comment author username goes here...">
             </div>
@@ -163,7 +163,7 @@
 
             <!-- Dropdown -->
             <div class="single-input-container">
-                <label for="day" class="input-label">Day of the week</label>
+                <label for="day" class="input-label">Day of the week (Leave empty to auto-fill)</label>
                 <select id="day" name="day" class="input-custom input-dropdown">
                     <option value="">Random day</option>
                     <option value="1">Monday</option>
@@ -177,7 +177,7 @@
             </div>
             <!-- Dropdown -->
             <div class="single-input-container">
-                <label for="hour" class="input-label">Hour</label>
+                <label for="hour" class="input-label">Hour (Leave empty to auto-fill)</label>
                 <select id="hour" name="hour" class="input-custom input-dropdown">
                     <option value="">Random hour</option>
                     @for ($i = 0; $i <= 23; $i++)
@@ -186,7 +186,7 @@
                 </select>
             </div>
             <div class="single-input-container">
-                <label for="text" class="input-label">Comment</label>
+                <label for="text" class="input-label">Comment (Leave empty to auto-fill)</label>
                 <textarea class="input-custom p-2 w-full" style="height:100px;" id="text" name="text"></textarea>
             </div>
             <button type="submit" class="input-button">Add comment</button>
